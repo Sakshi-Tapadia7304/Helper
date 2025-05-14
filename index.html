@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dr.Helper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background-animation"></div>
+
+    <header>
+        <h1>Welcome to Dr.Helper</h1>
+        <p>Your all-round health assistant!</p>
+        <p style="font-size: larger; font-weight:lighter;">"BEING HEALTH CONSCIOUS WITH DR.HELPER"</p>
+    </header>
+    <main>
+        <section id="urgencySection">
+            <h2>Urgency</h2>
+            
+            <button id="voiceButton">🎤 Speak</button><br>
+            <div id="stethoscope-container" style="display:block">
+                <img src="stethoscope.png" alt="Stethoscope" class="stethoscope">
+                <p>Listening...</p>
+            </div>
+            <a href="up.html">Take picture</a>
+            
+            
+            <section id="imageUploadSection">
+                <h2>Upload Images for Analysis</h2>
+                <p>If you're unsure about your symptoms or condition, upload an image for Dr.Helper to analyze.</p>
+                <input type="file" id="imageInput" accept="image/*">
+                <button id="uploadButton">Upload and Analyze</button>
+                <div id="analysisResult"></div>
+            </section>
+            
+                   
+        <section id="symptomsSection">
+            <h2>Where does it hurt?</h2>
+            <form id="symptomsForm">
+                <label><input type="checkbox" value="Head" name="symptom"> Head</label><br>
+                <label><input type="checkbox" value="Ear" name="symptom"> Ear</label><br>
+                <label><input type="checkbox" value="Nose" name="symptom"> Nose</label><br>
+                <label><input type="checkbox" value="Eyes" name="symptom"> Eyes</label><br>
+                <label><input type="checkbox" value="Other" name="symptom"> Other</label><br>
+                <button id="submitSymptoms" type="button">Submit Symptoms</button>
+            </form>
+            <div id="additionalQuestions"></div>
+        </section>
+
+        <section id="chatbotSection">
+            <h2>Chatbot</h2>
+            <iframe
+            src="https://udify.app/chatbot/vSNj2PfyqWYzacM7"
+            style="width:50% ;height: 50%; min-height: 450px"
+            frameborder="0"
+            allow="microphone">
+           </iframe>
+        </section>
+
+        <section id="loginSection">
+            <h2>Save Data for Future Use</h2>
+            <form id="signInForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" required><br>
+                <button type="submit">Sign In</button>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
