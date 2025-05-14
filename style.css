@@ -1,0 +1,154 @@
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #e0f7fa;
+}
+
+.stethoscope {
+    width: 50px;
+    animation: pulse 1s infinite;
+}
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+#p1{
+    background-color:#a2d2ff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(12, 12, 12);
+}
+/* Center the entire form on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full height of the viewport */
+    margin: 0;
+    background-color: #f9f9f9; /* Optional: Light background */
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Style the form */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 320px; /* Fixed width for consistent alignment */
+    padding: 20px;
+    background-color: #cdb4db;
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style input fields */
+input {
+     /* Full width inside the form */
+    padding: 10px;
+    margin-bottom: 15px; /* Space between fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style the sign-in button */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color:#ff3f85; /* Attractive green color */
+    color: white;
+    font-size: 16px;
+    border: #333;
+}
+/* Style the stethoscope section */
+#stethoscopeAnimation {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.stethoscope {
+    width: 150px;
+    animation: pulse 1.5s infinite;
+}
+
+/* Pulse animation */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Listening text style */
+#stethoscopeAnimation p {
+    font-size: 20px;
+    color: #005f73;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Full-page background container */
+#background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send it behind the content */
+    background: url('bot-animation.gif') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 3s ease-in-out infinite;
+}
+
+/* Optional: Fade effect */
+@keyframes fadeIn {
+    0% { opacity: 0.8; }
+    50% { opacity: 1; }
+    100% { opacity: 0.8; }
+}
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevents scrollbars from appearing for the animated background */
+}
+
+/* Moving background animation */
+#background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places it behind the content */
+    background: linear-gradient(-45deg, #ff9a9e, #5c76e9, #a2d2ff, #d5cee6);
+    background-size: 400% 400%; /* Enlarges the gradient for a smooth effect */
+    animation: moveBackground 15s infinite; /* Applies animation */
+}
+
+/* Keyframes for the moving gradient */
+@keyframes moveBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Header and main content alignment */
+header {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+main {
+    max-width: 600px;
+    margin: 0 auto;
+    color: #333;
+}
